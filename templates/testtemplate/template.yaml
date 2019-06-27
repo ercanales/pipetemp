@@ -1,6 +1,5 @@
   version: 1
   type: pipeline-template
-  templateType: MULTIBRANCH
 
   name: Java Maven App Pipeline Job
   description: Simple Java App With Maven
@@ -12,10 +11,3 @@
       type: string
       displayName: GitHub HTTPS repo endpoint
       allowedValues: ['One','Two','Three']
-  multibranch:
-    branchSource:
-      bitbucket:
-        remote: https://bitbucket.beescloud.com
-        repoOwner: myCompany
-        repository: pipetemp1
-        credentialsId: my-team-bitbucket-credentials
