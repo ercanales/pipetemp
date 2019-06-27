@@ -10,4 +10,4 @@
     - name: github_repo
       type: string
       displayName: GitHub HTTPS repo endpoint
-      allowedValues: 'One','Two','Three'
+      allowedValues: ['One','Two','Three']
