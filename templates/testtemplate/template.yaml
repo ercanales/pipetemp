@@ -17,5 +17,5 @@
       bitbucket:
         remote: https://bitbucket.beescloud.com
         repoOwner: myCompany
-        repository: ${repoName}
+        repository: pipetemp1
         credentialsId: my-team-bitbucket-credentials
