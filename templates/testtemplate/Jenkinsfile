@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-              echo ${emailRecipient}
+              echo "${emailRecipient}"
             }
         }
         stage('Build') {
             steps {
-                echo ${github_repo}
+                echo "${github_repo}"
             }
         }
     }
