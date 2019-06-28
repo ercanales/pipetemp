@@ -16,6 +16,6 @@
     branchSource:
       bitbucket:
         remote: https://bitbucket.beescloud.com
-        repoOwner: support-team
+        repoOwner: pip
         repository: pipetemp1
         credentialsId: gbb
