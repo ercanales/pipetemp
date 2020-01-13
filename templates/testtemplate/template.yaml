@@ -20,4 +20,4 @@
         repository: pipetemp1
         credentialsId: gbb
         traits:
-          - $class: TagDiscoveryTrait
+          - $class: com.cloudbees.jenkins.plugins.bitbucket.TagDiscoveryTrait
