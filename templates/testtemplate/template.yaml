@@ -19,3 +19,5 @@
         repoOwner: pipetemptests
         repository: pipetemp1
         credentialsId: gbb
+        traits:
+          - $class: TagDiscoveryTrait
