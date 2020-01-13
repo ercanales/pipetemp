@@ -15,7 +15,7 @@
   multibranch:
     branchSource:
       bitbucket:
-        remote: https://bitbucket.beescloud.com
+        serverUrl: https://bitbucket.beescloud.com
         repoOwner: pipetemptests
         repository: pipetemp1
         credentialsId: gbb
