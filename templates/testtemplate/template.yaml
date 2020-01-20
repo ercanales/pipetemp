@@ -21,3 +21,7 @@
         credentialsId: gbb
         traits:
           - $class: com.cloudbees.jenkins.plugins.bitbucket.TagDiscoveryTrait
+      buildStrategies:
+        TagBuildStrategyImpl:
+          atLeastMillis: -1
+          atMostMillis: 604800000
