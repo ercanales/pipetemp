@@ -22,6 +22,6 @@
         traits:
           - $class: com.cloudbees.jenkins.plugins.bitbucket.TagDiscoveryTrait
         buildStrategies:
-          TagBuildStrategyImpl:
+          - $class: jenkins.branch.buildstrategies.basic.TagBuildStrategyImpl
             atLeastMillis: -1
             atMostMillis: 604800000
