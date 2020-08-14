@@ -1,12 +1,21 @@
 version: 1
-name: A Multibranch Template
+name: Traditional Pipeline
 type: pipeline-template
 templateType: MULTIBRANCH
 parameters:
-  - name: repoUrl
+  - name: projectKey
     type: string
-    displayName: Repo
+    displayName: Project Key
+  - name: repoName
+    type: string
+    displayName: Repo Name
+  - name: pipelineRef
+    type: string
+    displayName: Pipeline Ref
+    defaultValue: release
 multibranch:
   branchSource:
-    git:
-      remote: ${repoUrl}
+    bitbucket:
+      serverUrl: https://bitbucket.org
+      repoOwner: ${projectKey}
+      repository: ${repoName}
