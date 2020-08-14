@@ -1,27 +1,12 @@
-  version: 1
-  type: pipeline-template
-  templateType: MULTIBRANCH
-
-  name: Java Maven App Pipeline Job
-  description: Simple Java App With Maven
-  parameters:
-    - name: emailRecipient
-      type: string
-      displayName: Email address to be used for sending build notifications
-    - name: github_repo
-      type: string
-      displayName: GitHub HTTPS repo endpoint
-      allowedValues: ['One','Two','Three']
-  multibranch:
-    branchSource:
-      bitbucket:
-        serverUrl: https://bitbucket.beescloud.com
-        repoOwner: pipetemptests
-        repository: pipetemp1
-        credentialsId: gbb
-        traits:
-          - $class: com.cloudbees.jenkins.plugins.bitbucket.TagDiscoveryTrait
-        buildStrategies: 
-          - $class: TagBuildStrategyImpl
-            atLeastMillis: -1
-            atMostMillis: 604800000
+version: 1
+name: A Multibranch Template
+type: pipeline-template
+templateType: MULTIBRANCH
+parameters:
+  - name: repoUrl
+    type: string
+    displayName: Repo
+multibranch:
+  branchSource:
+    git:
+      remote: ${repoUrl}
