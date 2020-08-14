@@ -22,4 +22,4 @@ multibranch:
       serverUrl: https://bitbucket.org
       repoOwner: ${projectKey}
       repository: ${repoName}
-      displayName: ${displayNamet}
+  displayName: doesthisnamework
