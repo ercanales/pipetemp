@@ -3,6 +3,9 @@ name: Traditional Pipeline
 type: pipeline-template
 templateType: MULTIBRANCH
 parameters:
+  - name: displayNamet
+    type: string
+    displayName: Display Name
   - name: projectKey
     type: string
     displayName: Project Key
@@ -19,3 +22,4 @@ multibranch:
       serverUrl: https://bitbucket.org
       repoOwner: ${projectKey}
       repository: ${repoName}
+      displayName: ${displayNamet}
