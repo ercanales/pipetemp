@@ -1,6 +1,6 @@
 version: 1
 name: Traditional Pipeline
-displayName: comeonework
+description: build, test, and deploy kubernetes service
 type: pipeline-template
 templateType: MULTIBRANCH
 parameters:
