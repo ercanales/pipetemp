@@ -1,26 +1,9 @@
-version: 1
-name: Traditional Pipeline
-description: build, test, and deploy kubernetes service
-type: pipeline-template
-templateType: MULTIBRANCH
-parameters:
-  - name: displayNamet
-    type: string
-    displayName: Display Name
-    description: test
-  - name: projectKey
-    type: string
-    displayName: Project Key
-  - name: repoName
-    type: string
-    displayName: Repo Name
-  - name: pipelineRef
-    type: string
-    displayName: Pipeline Ref
-    defaultValue: release
-multibranch:
-  branchSource:
-    bitbucket:
-      serverUrl: https://bitbucket.org
-      repoOwner: ${projectKey}
-      repository: ${repoName}
+  version: 1
+  type: pipeline-template
+
+  name: Simple Pipeline
+  description: Replace values in pipeline
+  parameters:
+    - name: emailRecipient
+      type: string
+      displayName: Email address to be used for sending build notifications
