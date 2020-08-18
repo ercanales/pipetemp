@@ -19,8 +19,8 @@ parameters:
     defaultValue: release
 multibranch:
   branchSource:
-    displayName: ${displayNamet}
     bitbucket:
       serverUrl: https://bitbucket.org
       repoOwner: ${projectKey}
       repository: ${repoName}
+      displayName: ${displayNamet}
