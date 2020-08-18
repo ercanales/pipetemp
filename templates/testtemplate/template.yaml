@@ -7,7 +7,6 @@ parameters:
   - name: displayNamet
     type: string
     displayName: Display Name
-    description: test
   - name: projectKey
     type: string
     displayName: Project Key
@@ -19,6 +18,7 @@ parameters:
     displayName: Pipeline Ref
     defaultValue: release
 multibranch:
+  displayName: ${displayNamet}
   branchSource:
     bitbucket:
       serverUrl: https://bitbucket.org
