@@ -18,8 +18,8 @@ parameters:
     displayName: Pipeline Ref
     defaultValue: release
 multibranch:
-  displayName: ${displayNamet}
   branchSource:
+    displayName: ${displayNamet}
     bitbucket:
       serverUrl: https://bitbucket.org
       repoOwner: ${projectKey}
